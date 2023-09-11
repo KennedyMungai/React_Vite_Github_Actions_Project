@@ -42,7 +42,6 @@ jobs:
     #             name: test-report
     #             path: test.json
     build:
-        needs: test
         runs-on: ubuntu-latest
         steps:
             - name: Get Code
