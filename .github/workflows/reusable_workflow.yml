@@ -1,0 +1,15 @@
+name: Reusable Workflows
+
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - main
+            - dev
+    
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Output Information
+              run: echo "Deploying and uploading..."
