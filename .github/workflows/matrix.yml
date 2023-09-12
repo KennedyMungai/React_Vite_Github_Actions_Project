@@ -8,6 +8,10 @@ on:
 
 jobs:
     build:
+        strategy:
+            matrix:
+                node-version: [12, 14, 16]
+                operating-system: [ubuntu-20.04, windows-latest]
         runs-on: ubuntu-latest
         steps:
             - name: Get the code
