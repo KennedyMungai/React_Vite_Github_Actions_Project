@@ -10,7 +10,7 @@ on:
                 type: string
         secrets:
             some-secret:
-                required: true
+                required: false
     
 jobs:
     deploy:
